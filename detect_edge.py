@@ -2,10 +2,9 @@ import argparse
 import cv2
 
 
-parser = argparse.ArgumentParser(description="Detect the edge of the image and saze it")
+parser = argparse.ArgumentParser(description="Detect the edge of the image and save it")
 parser.add_argument("target_path", help="Target file path")
-parser.add_argument("destination_path", help="Destination file path to saze")
-
+parser.add_argument("destination_path", help="Destination file path to save")
 args = parser.parse_args()
 
 org_img = cv2.imread(args.target_path)
