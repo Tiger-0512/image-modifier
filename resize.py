@@ -29,7 +29,6 @@ parser = argparse.ArgumentParser(description="Resize images to square in one fol
 parser.add_argument("target_path", help="Target folder path")
 parser.add_argument("destination_path", help="Destination folder path")
 parser.add_argument("size", help="Length of images side to resize")
-
 args = parser.parse_args()
 
 target = args.target_path
