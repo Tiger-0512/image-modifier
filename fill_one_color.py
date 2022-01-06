@@ -25,7 +25,6 @@ os.makedirs(destination, exist_ok=True)
 
 print("******* Start changing color... *******")
 for count, p in enumerate(p_list):
-    count += 1
     img = cv2.imread(str(p))
     img[np.where((img == from_color).all(axis=2))] = to_color
     cv2.imwrite(f"{destination}/ccolor_{pathlib.Path(p.name).stem}.png", img)
